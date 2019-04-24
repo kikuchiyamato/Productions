@@ -9,7 +9,7 @@ form{
  margin: 2em auto;
  padding: 1em;
  width: 90%;
- height:685px;
+ height:730px;
  color: #555555; /* 文字色 */
  background-color: #ffe2c6; /* 背景色 */
  box-shadow: 0 0 10px 10px #ffe2c6; /* 影 */
@@ -17,7 +17,7 @@ form{
 
 .form{
     margin:0 auto;
-    margin-top:90px;
+    margin-top:120px;
     width:50%;
     white-space: nowrap;
 }
