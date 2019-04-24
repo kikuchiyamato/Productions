@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+    
+<!--jQuery呼び出し-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    
+<title>料理のメニュー</title>
+</head>    
+    
+<link rel="stylesheet" type="text/css"
+      href="menu.css"> 
+    
+<!--クリックしたらページ内をスクロールしてくれるjs-->
+ <script type="text/javascript">
+    $(function(){
+$('a[href^="#"]').click(function() {
+var speed = 500;   
+var headerHight=120;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top-headerHight; 
+$("html,body").animate({scrollTop:position}, speed, "swing");
+return false;
+   });
+});
+
+ $(function(){
+    $('.top a').hover(function(){
+    $(this).text('トップ');
+    },function(){
+    $(this).text('TOP');
+    });
+    
+    $('.grand a').hover(function(){
+    $(this).text('グランドメニュー');
+    },function(){
+    $(this).text('Grand Menu');
+    });     
+     $('.lunch a').hover(function(){
+    $(this).text('ランチ');
+    },function(){
+    $(this).text('Lunch');
+    }); 
+      $('.party a').hover(function(){
+    $(this).text('パーティー');
+    },function(){
+    $(this).text('Party');
+    }); 
+      $('.wine a').hover(function(){
+    $(this).text('ワインリスト');
+    },function(){
+    $(this).text('Wine List');
+    }); 
+ });   
+     
+    </script>   
+
+<!--画面外の余白を０にする-->
+<body leftmargin="0" topmargin="0" rightmargin="0 "bottommargin="0"> 
+    
+<!--ヘッダーボタン群--> 
+<header>
+<ul>
+    <a href="index1.html">
+        <li class="piatto">Sapori Piatto</li></a>
+    
+    <li class="top"><a href="index1.html" class="btn-top-radius">TOP</a>
+    </li>
+    
+    <li class="grand"><a href="#glandmenu" class="btn-top-radius">Grand Menu</a></li>
+
+    <li class="lunch"><a href="#lunch" class="btn-top-radius">Lunch</a> </li>
+
+    <li class="party"><a href="#party" class="btn-top-radius">Party</a>  </li> 
+
+    <li class="wine"><a href="#winelist" class="btn-top-radius">Wine List</a>  </li> 
+    </ul>
+</header>
+    
+<main>
+    
+<!--グランドメニュー-->
+    <div class="box1"> 
+  
+<div id="glandmenu">
+
+    
+    <h1>──────　Grand Menu　──────</h1>
+    
+    
+    <table border="0" cellspacing="50">
+  <tr>
+   <td><img src="niku.jpg">
+         <h4>サーロインステーキ和風ポン酢ソース   1800円(税別)</h4></td>
+   <td><img src="pasta%202.jpg">
+         <h4>トマトソースパスタ    　　　　　　　　 1200円(税別)</h4></td>
+  </tr>
+  <tr>
+   <td><img src="paeria.jpg">
+       <h4>魚介のパエリア　　　　　　　　　　　2000円(税別)</h4></td>
+   <td><img src="pizza3.jpg">
+        <h4>マルゲリータピザ　　　　　　　　　　1500円(税別)</h4></td>
+  </tr>
+ </table>
+
+    </div>
+        
+<!-- ランチ   -->
+<div id="lunch">
+
+    <h1>────── Lunch ──────</h1>
+    
+<table border="0" cellspacing="50">
+  <tr>
+   <td><img src="oneplate.jpg">
+          <h4>緑黄色野菜ワンプレートランチ　　　　　　900円(税別)</h4></td>
+   <td><img src="pastalunch.jpg">
+           <h4>パスタランチ サラダセット　　　　　　980円(税別)</h4></td>
+  </tr>
+ </table>
+
+    
+    </div>
+
+<!--パーティー-->
+<div id="party">
+ 
+    
+      <h1>────── Party ──────</h1>
+    
+    
+        
+<table border="0" cellspacing="50">
+  <tr>
+   <td><img src="ord.jpg">
+          <h4>オードブル8種セット　　　　　　　　　5990円(税別)</h4></td>
+   <td><img src="pp.jpg">
+          <h4>選べるメイン + オードブル4種セット　6990円(税別)</h4> </td>
+  </tr>
+ </table>
+
+
+    </div>
+ 
+<!--ワインリスト  -->
+<div id="winelist">
+
+      <h1>────── WineList ──────</h1>
+
+     <table border="0" cellspacing="50">
+  <tr>
+   <td><img src="wine1.jpg">
+          <h4>シノン・ソレイユ・ド・クーレーヌ 　　2000円(税別)</h4></td>
+   <td><img src="wine2.jpg">
+        <h4>シャトー・ラグランジュ 　　　　　　　6000円(税別)</h4></td>
+  </tr>
+  <tr>
+   <td><img src="wine3.jpg">
+       <h4>ヴォーヌ・ロマネ      　　　　　　　　　　7000円(税別)</h4></td>
+   <td><img src="wine4.jpg">
+        <h4>グラスマウンテン・メルロー  　　　　　2000円(税別)</h4></td>
+  </tr>
+ </table>
+    
+    </div>
+
+    
+   </div>   
+      
+    
+    
+        </main>
+ 
+    </body>
+</html>

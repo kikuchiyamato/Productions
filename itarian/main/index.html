@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+
+<!--jQuery呼び出し-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>    
+    
+<title>イタリアン</title>
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">    
+<link rel="stylesheet" type="text/css" href="style1.css">
+    
+<!--クリックしたらページ内をスクロールしてくれるjs-->
+<script type="text/javascript">
+$(function(){
+    $('a[href^="#"]').click(function(){
+        var speed = 500;
+        var headerHight=100;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top-headerHight; 
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });  
+    
+});
+      
+//hover日本語
+ $(function(){
+    $('.top a').hover(function(){
+    $(this).text('トップ');
+    },function(){
+    $(this).text('TOP');
+    });
+     
+    $('.menu a').hover(function(){
+    $(this).text('メニュー');
+    },function(){
+    $(this).text('Menu');
+    });
+     
+    $('.vege a').hover(function(){
+    $(this).text('新鮮野菜');
+    },function(){
+    $(this).text('Vegetables');
+    });
+     
+    $('.con a').hover(function(){
+    $(this).text('コンセプト');
+    },function(){
+    $(this).text('Concept');
+    });
+        
+    $('.com a').hover(function(){
+    $(this).text('こだわり');
+    },function(){
+    $(this).text('Quality');
+    });
+     
+    $('.gen a').hover(function(){
+    $(this).text('本場イタリアの味');
+    },function(){
+    $(this).text('Genuine Taste');
+    });
+        
+    $('.contact a').hover(function(){
+    $(this).text('問い合わせ');
+    },function(){
+    $(this).text('Contact Us');
+    });
+        
+    $('.acc a').hover(function(){
+    $(this).text('アクセス');
+    },function(){
+    $(this).text('Access');
+    });
+
+});
+
+
+</script>
+
+</head>
+    
+<!--画面外の余白を０にする-->
+<body leftmargin="0" topmargin="0" rightmargin="0 "bottommargin="0">  
+    
+
+    
+<header>
+  <ul> 
+    <a href="index1.html">
+        <li class="piatto">Sapori Piatto</li></a>
+      
+    <li class="top"><a href="#logo" class="btn-top-radius">TOP</a>
+    </li>
+<!--
+
+    <li class="menu"><a href="menu.html" class="btn-top-radius">Menu</a></li>
+-->
+      
+    <li class="vege"><a href="#Vegetables" class="btn-top-radius">Vegetables</a></li>
+      
+    <li class="con"><a href="#concept" class="btn-top-radius">Concept</a></li>
+      
+    <li class="com"><a href="#Committedquality" class="btn-top-radius">Quality</a></li>
+      
+    <li class="gen"><a href="#Genuinetaste" class="btn-top-radius">Genuine Taste</a></li>
+      
+    <li class="acc"><a href="#access" class="btn-top-radius">Access</a></li>
+      
+    <li class="contact"><a href="contactform.html" class="btn-top-radius">Contact Us</a></li>
+      
+  
+</ul>    
+    
+</header>
+    
+<div class="main-conteiner">
+    
+<!--         透かし-->
+    <div class="sukashi"></div>
+         
+<!--         ピザ大画像-->
+    <div id="logo">
+<a href="index1.html"><img class="bigpizza" src="pizza1.jpg" alt="ピザの写真"></a> 
+
+
+<!--　　　　スクロールボタン-->
+<div class="scroll">
+<a href="#color"><span></span>Menu</a>
+    </div>
+            
+            
+  </div>
+    
+    <br>
+ <br>
+<table id="color" border="0" cellspacing="50">
+    <tr>
+        <th colspan="4">メニュー
+        <span class="english6">What kind of..?</span>
+        </th>
+    </tr>
+  <tr>
+   <td>
+       <a href="menu.html">
+       <img  src="lunch1.png" alt="ランチ" width="290px" height="290px">
+           <h2>Lunch</h2></a>
+      </td>
+      
+       <td>
+       <a href="menu.html">
+       <img  src="dinner.png" alt="ディナー" width="290px" height="290px">
+           <h2>Dinner</h2></a>
+      </td>
+      
+   <td>
+       <a href="menu.html">
+           <img src="party1.png" alt="パーティー" width="290px" height="290px">
+           <h2>Party</h2> </a>
+      </td>
+      
+    <td>
+        <a href="menu.html">
+        <img src="wine1.png" alt="ワイン" width="290px" height="290px" >
+            <h2>Wine</h2></a>
+      </td>
+  </tr>
+ </table>
+    <br>
+       <br>
+    <br>
+      <br>
+       <br>
+    <br>
+    
+<!--   スクロールボタン -->
+    <div class="scroll2">
+<a href="#Vegetables"><span></span>当店の魅力</a>
+    </div> 
+     <br>
+      <br>
+       <br>
+    <br>
+       <br>
+      <br>
+        
+<div id="Vegetables">
+<table class="color" border="0" cellspacing="50" >
+<tr>
+    <th colspan="2">新鮮野菜
+        <span class="english1">Vegetables</span>
+        </th>
+    </tr>
+    
+  <tr>
+   <td align="right">
+     <img src="yasai.jpg" alt="野菜" width="400px" height="300px" >
+    </td>
+      
+    <td align="left">
+<a>
+こだわりの農家から新鮮野菜を直接仕入れています。<br>
+当店では、作り手の顔が見える安心感を大切にしています。<br>
+そして野菜そのものの美味しさをご堪能いただけるよう<br>
+調理方法にもこだわっております。<br>
+ぜひ新鮮野菜の美味しさをお楽しみください。</a>
+      </td>
+  </tr>
+ </table>
+        </div>  
+    
+ <br><br><br>
+        
+ <div id="concept">   
+<table class="color" border="0" cellspacing="50" >
+<tr>
+    <th colspan="2">コンセプト
+        <span class="english2">Concept</span>
+    </th>
+    </tr>
+  <tr>
+   <td align="right">
+<a>
+当レストランは、ご家族やご友人とお気軽に利用していただける<br>
+ような親しみやすいお店作りを目指しています。<br>
+本場イタリアで修行を積んだシェフの料理を<br>
+本格的ながらリーズナブルに楽しめます。<br>
+また、テラス席では愛犬と一緒に食事を楽しむこともできます。<br>
+たくさんのお客様のご来店を心よりお待ちしております。<br>
+        </a>
+    </td>
+      
+    <td align="left">  
+        <img src="syefu.jpg" alt="シェフ" width="450px" height="300px">
+      </td>
+  </tr>
+ </table>
+        </div>
+
+  <br><br><br>
+        
+<div id="Committedquality">        
+<table class="color" border="0" cellspacing="50" >
+<tr>
+    <th colspan="2">
+        素材へのこだわり
+        <span class="english3">Committed to Quality</span>
+    </th>
+    </tr>
+    
+  <tr>
+   <td align="right">
+ <img src="kodawari.jpg" alt="こだわり"　width="300px" height="300px" >
+    </td>
+    <td align="left">
+<a>
+どなたにも安心してお食事を楽しんでいただけるよう<br>
+当店で扱っている食材はすべて国産です。<br>
+作り手の顔が見える安心感を大切にしています。<br>
+ワインは、本場イタリアで修行を積んだシェフが<br>
+お料理に合うものを仕入れています。<br>
+ぜひご一緒にお楽しみください。<br>
+        </a>
+      </td>
+  </tr>
+ </table>
+        </div>  
+    
+     <br><br><br>
+     
+<div id="Genuinetaste">        
+<table class="color" border="0" cellspacing="50"> 
+<tr>
+    <th colspan="2">本場の味
+        <span class="english4">Genuine Taste</span>
+    </th>
+    </tr>
+<tr>
+   <td align="right">
+<a>
+本場イタリアで修行を積んだシェフが腕によりをかけた<br>
+ピッツァはぜひお召し上がりいただきたい一品です。<br>
+石窯で一枚ずつ丁寧に焼き上げております。<br>
+お席にピッツァが届きましたら、<br>
+チーズが冷める前にお召し上がりください。<br>
+        </a>
+    </td>
+    <td align="left">
+         <img src="kama.jpg" alt="ナポリ"　width="400px" height="300px">
+    </td>
+  </tr>
+ </table>
+    
+        </div> 
+    
+  <br><br><br>
+    
+<table id="access" border="0" cellspacing="50" > 
+ 
+    <tr><th colspan="3">アクセス
+        <span class="english5">Access</span>
+        </th></tr>
+    <tr>
+        <td colspan="3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1376.771594750388!2d139.7415294397305!3d35.685270407659395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c6551ec84eb%3A0xe17bf5a55e838157!2z5Y2K6JS16ZaA6aeF!5e0!3m2!1sja!2sjp!4v1555663009607!5m2!1sja!2sjp" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </td>
+    </tr>
+ 
+<tr>
+    <td class="ac" align="left" ><h1>Sapori Piatto本店</h1></td>
+    
+    <td class="ac" align="left">
+        📞 03-3000-1234<br>
+        〒102-0083<br>
+        東京都千代田区麹町一丁目 △△ビル１F</td>
+    
+　　<td class="ac" align="left">
+    Lunch:　11時30分〜15時　＜L.O. 14時30分＞<br>
+    Dinner:　17時30分〜22時　＜L.O. 21時30分＞<br>
+    </td>
+    
+  </tr>
+ </table>  
+    </div> 
+
+    
+<footer>
+<table class="footer1" border="0" cellspacing="0" width="100%" bgcolor="#f5b1aa">
+    
+<tr>
+    <td>
+<h1 class="line" align="bottom">Sapori Piatto</h1>
+    </td>
+    </tr>
+    <tr>
+        <td> <h3>有楽町店　池袋店　赤坂店　日本橋店　広尾店</h3></td>
+    </tr>
+    <tr>
+    <td>
+<p>COPYRIGHT &#169; KikuchiYamato ALL RIGHTS RESERVED.</p>
+    </td>    
+ 
+</tr>
+    
+ </table>
+        
+    
+ </footer>   
+    
+    
+</body> 
+
+</html>

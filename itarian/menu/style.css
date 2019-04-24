@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Gruppo|Noto+Serif+JP|Rock+Salt');
+html{
+    overflow:auto; 
+}
+body{
+    overflow: hidden;
+    min-width:100%;
+    font-family: 'Gruppo', cursive;/*日本語非対応*/
+    font-family: 'Noto Serif JP', serif;/*日本語対応*/
+}
+
+header{
+    position: fixed;
+    z-index:1;
+    top:0px;
+    width:100%;
+    height:100px;
+    background-color:#f5b1aa;
+}
+
+header li{
+    float:left;
+    list-style:none;
+    line-height:60px;
+    margin:0px 20px 30px 0px; 
+}
+
+
+.piatto{
+    clear: both;
+   font-family: 'Rock Salt', cursive;/*走り書き英語*/
+    line-height:70px;
+    font-size:35px;
+    color:white;
+    margin-right: 170px;
+}
+
+/*ヘッダー*/
+.btn-top-radius {
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+  color: #ff7f7f;
+  background: #fff1da;
+  border-bottom: solid 4px #ff7f7f;
+  border-radius: 15px 15px 15px 15px;
+  transition: .4s;
+}
+
+
+/*通過すると色が変わる*/
+.btn-top-radius:hover {
+  background: #ffb2b2;
+  color: #FFF;
+}
+
+/*ふんわりBOX*/
+.box1 {
+ margin: 200px auto;
+　margin-top:5em;
+ padding: 1em;
+ width: 90%;
+ height:3200px;
+ color: #555555; /* 文字色 */
+ background-color: #ffe2c6; /* 背景色 */
+ box-shadow: 0 0 10px 10px #ffe2c6;/* 影 */
+}
+
+
+h4{
+border-bottom:solid 1px black; 
+}
+
+h1{
+    text-align: center;
+    color:#555555;
+    white-space: nowrap;
+}
+
+img{
+    width:400px;
+    height:35vh;
+}
+
+table{
+  margin:0 auto;
+}
+
+/*グランドメニュー群*/
+
+
+/*ランチ群*/
+#lunch {
+margin:0 auto;
+}
+
+/*パーティー群*/
+#party {
+margin: 0 auto;
+
+}
+
+/*ワインリスト*/
+#winelist{
+margin:0 auto;
+}
+
+
+.button{
+    margin-left:1000px;
+}

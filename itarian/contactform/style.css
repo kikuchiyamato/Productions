@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Gruppo|Noto+Serif+JP|Rock+Salt');
+
+body{
+     font-family: 'Noto Serif JP', serif;/*日本語対応*/
+}
+
+/*ふんわりBOX*/
+form{
+ margin: 2em auto;
+ padding: 1em;
+ width: 90%;
+ height:685px;
+ color: #555555; /* 文字色 */
+ background-color: #ffe2c6; /* 背景色 */
+ box-shadow: 0 0 10px 10px #ffe2c6; /* 影 */
+}
+
+.form{
+    margin:0 auto;
+    margin-top:90px;
+    width:50%;
+    white-space: nowrap;
+}
+th{
+     font-size:30px;
+}
+
+
+
+/*見出しタイトル日本語＆英語*/
+.line-center{
+display: flex;
+align-items: center;
+font-size:  14px;
+margin-top:  10px; 
+width:100%;
+margin:0 auto; 
+}
+.line-center:before,
+.line-center:after {
+border-top: 1px solid;
+content: "";
+flex-grow: 10;
+}
+.line-center:before {
+margin-right: 0.5rem;
+}
+.line-center:after {
+margin-left: 0.5rem;
+}
+
+
+.button1{
+    text-align: center;
+}
+
+.button2{
+     text-align: center;
+}
+
+
+
+
+
+

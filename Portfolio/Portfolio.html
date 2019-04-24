@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+    
+<link rel="stylesheet" type="text/css" href="Portfolio.css">
+    
+<!--jQuery呼び出し-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+
+    
+
+    <!--クリックしたらページ内をスクロールしてくれるjs-->
+<script type="text/javascript">
+$(function(){
+    $('a[href^="#"]').click(function(){
+        var speed = 500;
+//        var headerHight=100;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+//        var position = target.offset().top-headerHight; 
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });  
+    
+});
+</script>
+</head>
+    
+<!--画面外の余白を０にする-->
+<body leftmargin="0" topmargin="0" rightmargin="0 "bottommargin="0"> 
+
+    
+<div id="section1">    
+    <table class="title" border="0" cellspacing="0">
+  <tr>
+    <th>Portfolio
+        <span class="sub1">I wanna Be An Engineer</span>
+        </th>
+    </tr>
+    </table>
+    
+<!--スクロールボタン-->
+<div class="scroll">
+<a href="#section2"><span></span>Who's me?</a>
+    </div> 
+    </div>
+    
+    <br>
+    
+ <div id="section2">   
+    <table class="title" border="0" cellspacing="0">
+         <tr>
+       <th colspan="2" valign="middle">自己紹介
+        <span class="sub2">About</span>
+        </th>
+       </tr>
+         
+        <tr>
+         <td class="small">
+         <img src="neko.png" valign="top" align="right" width="300px" height="300px">    
+             </td>
+            
+             <td class="big">
+            <ul>
+                 <li>名前：　菊地　大和　-Kikuchi Yamato-</li>
+                 <li>出身：　千葉県市川市</li>
+                 <li>学歴：　千葉県立松戸南高等学校</li>
+                 <li>活動：　高校卒業後、カナダ・トロントに語学留学し<br>
+                     　　　　帰国後、不動産屋で約三年間専任の宅地建物取引士として従事。</li>
+               <li>その他：  猫が好き。</li>
+                 </ul>
+             </td>
+         </tr>
+     </table>
+     
+<!--スクロールボタン-->
+<div class="scroll2">
+<a href="#section3"><span></span>制作実績を見る</a>
+    </div>  
+     
+    </div>
+    
+    
+    
+<div id="section3">   
+    <table class="title" border="0" cellspacing="0">
+         <tr>
+       <th colspan="3" valign="middle" height="150px;">制作実績
+        <span class="sub2">Web制作</span>
+        </th>
+       </tr>
+         
+        <tr>
+            
+        <td style="text-align:right;"><img src="sapori-tr.png"></td>
+            
+        <td><img src="sapori-tr.png"></td>
+            
+        <td style="text-align:left;"><img src="sapori-tr.png"></td>
+            
+         </tr>
+     </table>
+     
+<!--スクロールボタン-->
+<div class="scroll3">
+<a href="#section4"><span></span>JAVA・PHP</a>
+    </div>  
+     
+    </div>
+
+        
+<div id="section4">   
+    <table class="title" border="0" cellspacing="50">
+         <tr>
+       <th colspan="3" valign="top"> 
+        <span class="sub2">JAVA・PHP</span>
+        </th>
+       </tr>
+         
+        <tr>
+            
+        <td style="text-align:right;"><img src=></td>
+            
+        <td><img src=></td>
+            
+        <td style="text-align:left;"><img src=></td>
+            
+         </tr>
+     </table>
+     
+<!--スクロールボタン-->
+<div class="scroll4">
+<a href="#section5"><span></span>Contact</a>
+    </div>  
+     
+    </div>
+
+    
+    
+    
+    
+    
+    
+<footer>
+</footer>
+
+    </body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
