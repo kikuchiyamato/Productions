@@ -1,5 +1,5 @@
 body{
-    
+    background-color: azure;
     height:3000px;
 
 /*    background-color:antiquewhite;*/
@@ -24,13 +24,13 @@ body{
 .small{
     position: relative;
     top:-130px;
-    left:-120px;
+    left:-80px;
 }
 /*自己紹介文位置*/
 .big{
     position: relative;
     top:-130px;
-    left:-100px;
+    left:-20px;
 }
 /*自己紹介文height*/
 li{
@@ -40,7 +40,7 @@ li{
 
 /*テーブル内レイアウト*/
 #section3 .title{
-    width:1150px;
+    width:1062px;
     margin:0 auto;
 }
 
@@ -50,8 +50,8 @@ li{
 
 /*制作実績画像サイズ*/
 #section3 td img{
-    width:380px;
-    height:450px; 
+    width:350px;
+    height:400px; 
 }
 
 
