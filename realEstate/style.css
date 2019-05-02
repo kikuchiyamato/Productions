@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps');
+
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+
+html,body{
+    margin:0;
+    background-color:#eff7ff;
+}
+
+header{
+    box-sizing:border-box;
+    position: fixed;
+    z-index:10;
+    top:0px;
+    left:0px;
+    width:100%;
+/*headerの高さ*/
+    height:100px;
+    background-color:#eff7ff;
+}
+
+header li{
+    float:left;
+    list-style:none;
+    line-height:70px;
+    margin:0px 10px 0px 10px;
+}
+
+#slider img{
+    width:100%;
+    height:900px;
+}
+
+.menu, .real{
+    text-decoration: none;
+     display: inline-block;
+  padding: 0px 15px 0px 15px;
+    color:#555555;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size:25px;
+}
+.real{font-size:40px;
+    margin-right:450px;
+}
+
+.leftcon{
+    float:left;
+    margin:20px 50px 0px 250px;
+}
+
+h1{
+    margin-left:230px;
+    margin-top:100px;
+}
+
+.photo{
+    margin:-20px 10px -30px 10px;
+}
+h5{
+    margin-top:-20px;
+    margin-bottom: 40px;
+}
+.left-posi{
+    clear: both;
+    position:absolute;
+    top:1520px;
+    left:270px;
+    background-color:white;
+    padding:25px 20px 25px 20px;
+}
+.mgn{
+/*    padding:10px 0px 10px 0px;*/
+    margin-top:-20px;
+}
+
+.font{
+    position:absolute;
+    top:1445px;
+    left:150px;
+    color:#99ccff;
+    font-size:80px;
+    font-family: 'Homemade Apple', cursive;
+    
+}
+.con-pcr{
+    line-height:50px;
+    text-align: left;
+    margin:20px 0px 0px 260px;
+}
+
+.ki{
+    position:absolute;
+    top:1740px;
+    left:900px;
+}
+.contact{
+/*    width:100%;*/
+    margin:0px 100px 100px 100px;
+    text-align: center;
+    padding:30px; 
+}
+.conform{
+    margin:0 auto;
+    
+}
+
+
+.wak{
+ margin: -370px 0px 100px 70px;
+        border:0.5px solid black;
+        width:90%;
+    height:370px;
+    
+}
+.btn{
+    text-align: right;
+    
+}
+.sizem{
+    
+    padding:5px;
+
+}

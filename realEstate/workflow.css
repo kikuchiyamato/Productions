@@ -1,0 +1,100 @@
+html,body{
+    margin:0;
+    background-color:#eff7ff;
+}
+
+
+
+h1{
+    width:100%;
+    text-align: center;
+   margin:0 auto;
+    margin-top:100px;
+}
+h1{
+display: flex;
+align-items: center;
+font-size:  30px; 
+width:90%;
+}
+h1:before,
+h1:after {
+border-top: 1px solid;
+content: "";
+flex-grow: 10;
+}
+h1:before {
+margin-right: 1rem;
+}
+h1:after {
+margin-left: 1rem;
+}
+
+
+
+.work1{
+    margin-top:100px;
+    margin-left: 300px;
+    text-align: left;
+    line-height:20px;
+}
+.work2{
+    margin-top:50px;
+    margin-left: 400px;
+    text-align: left;
+    line-height:20px;
+}
+.work3{
+    margin-top:50px;
+    margin-left: 500px;
+    text-align: left;
+    line-height:20px;
+}
+.work4{
+    margin-top:50px;
+    margin-left: 600px;
+    text-align: left;
+    line-height:20px;
+}
+.work5{
+    margin-top:50px;
+    margin-left: 700px;
+    text-align: left;
+    line-height:20px;
+}
+.work6{
+    margin-top:50px;
+    margin-left: 600px;
+    text-align: left;
+    line-height:20px;
+}
+.work7{
+    margin-top:50px;
+    margin-left: 500px;
+    text-align: left;
+    line-height:20px;
+}
+.work8{
+    margin-top:50px;
+    margin-left: 350px;
+    text-align: left;
+    line-height:20px;
+}
+.cap{
+    position: absolute;
+    top: 700px;
+    left:200px;
+}
+
+.cat{
+    position: absolute;
+        top: 300px;
+    left:900px;
+
+}
+
+.fam{
+    position: absolute;
+    top: 1150px;
+    left:1000px;
+}
