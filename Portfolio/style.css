@@ -1,60 +1,104 @@
-body{
-    background-color: azure;
-    height:3000px;
-
-/*    background-color:antiquewhite;*/
-    
-}
-/*テーブルクラス*/
-.title{
-   width:1150px;
-    height:800px;
-    table-layout: fixed;
+html,body{
     margin:0 auto;
 }
 
 
+body{
+    background-color: azure;
+    height:3000px;
+}
+
+header img{
+    position:fixed;
+    top:20px;
+    right:20px;
+}
+
+
+.title{
+   width:100%;
+    height:700px;
+    margin:0 auto;
+    font-size:40px;
+    text-align: center; 
+}
 
 /*英語＆日本語タイトル*/
-.title th{
+
+.title1{
     font-size:40px;
+    text-align: center;
+    margin-top: 350px;  
 }
 
-/*にゃんこ画像位置*/
-.small{
-    position: relative;
-    top:-130px;
-    left:-80px;
+.title2{
+    font-size:40px;
+    text-align: center;
+    margin-top: 400px;
+    margin-bottom: px;
+    padding:50px;
 }
-/*自己紹介文位置*/
-.big{
-    position: relative;
-    top:-130px;
-    left:-20px;
+
+
+.title3{
+/*    clear: both;*/
+    font-size:40px;
+    text-align: center;
+    margin-top: 400px;
+    padding:50px;
+}
+
+.title4{
+    font-size:40px;
+    text-align: center;
+    margin-top: 650px;
+    padding:100px;
+}
+
+
+.nyan{
+     float: left;
+    margin:50px 70px 0px 350px;
 }
 /*自己紹介文height*/
+ul{
+    margin:50px 0px 0px 0px;
+}
 li{
     list-style: none;
     line-height:45px;
 }
 
-/*テーブル内レイアウト*/
-#section3 .title{
-    width:1062px;
-    margin:0 auto;
+figure.snip1384 {
+    float: left;
+}
+.imggn{
+    margin-left: 200px;
 }
 
-#section3 td{
-    vertical-align: top;
-}
-
-/*制作実績画像サイズ*/
-#section3 td img{
+.imggn img{
     width:350px;
-    height:400px; 
+    height:400px;
 }
 
+.java{
+    margin-top: 30px;
+    margin-left: 200px;
+}
+.java img{
+    width:1000px;
+    height:300px;
+}
+#section5{
+    margin:300px 0px 0px 400px;
+}
 
+/*フッター中央寄せ*/
+footer,.copy{
+    font-size:14px;
+    text-align: center;
+    width:auto;
+}
 
 
 /*サブタイトルの横線css*/
@@ -167,7 +211,7 @@ margin-left: 0.5rem;
 /*制作実績のスクロールボタンの指定*/
 .scroll2 {
   position: absolute;
-  top:1485px;
+  top:1500px;
 　z-index:9;
   width: 100%;
   bottom: 0;
@@ -229,7 +273,7 @@ margin-left: 0.5rem;
 /*制作実績のスクロールボタンの指定*/
 .scroll3 {
   position: absolute;
-  top:2280px;
+  top:2450px;
 　z-index:9;
   width: 100%;
   bottom: 0;
@@ -286,10 +330,289 @@ margin-left: 0.5rem;
     opacity: 0;
   }
 }
+/*制作実績のスクロールボタンの指定*/
+.scroll4 {
+  position: absolute;
+  top:3285px;
+　z-index:9;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+  .scroll4 a{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+/*矢印クルクルのcss*/
+.scroll4 a span {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  z-index:9;
+  width: 20px;
+  height: 20px;
+  margin-left: -12px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
+}
+
+/*矢印の動き方（y軸方向に回転）指定*/
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
 
 
+/*フィギュキャプション*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip1384 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  background-color: #000000;
+}
+figure.snip1384 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1384 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+figure.snip1384:after,
+figure.snip1384 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+figure.snip1384:after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+figure.snip1384 figcaption {
+  z-index: 1;
+  padding: 40px;
+}
+figure.snip1384 h3,
+figure.snip1384 .links {
+  width: 100%;
+  margin: 5px 0;
+  padding: 0;
+}
+figure.snip1384 h3 {
+  line-height: 1.1em;
+  font-weight: 700;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  opacity: 0;
+}
+figure.snip1384 p {
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  opacity: 0;
+  top: 50%;
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+}
+figure.snip1384 i {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 20px 25px;
+  font-size: 34px;
+  opacity: 0;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+figure.snip1384 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+figure.snip1384:hover img,
+figure.snip1384.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+figure.snip1384:hover:after,
+figure.snip1384.hover:after {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+figure.snip1384:hover h3,
+figure.snip1384.hover h3,
+figure.snip1384:hover p,
+figure.snip1384.hover p,
+figure.snip1384:hover i,
+figure.snip1384.hover i {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 
 
-
-
-
+/*javaの画像ボタン*/
+figure.snip1384-java{
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 1000px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  background-color: #000000;
+}
+figure.snip1384-java * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1384-java img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+figure.snip1384-java:after,
+figure.snip1384-java figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+figure.snip1384-java:after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+figure.snip1384-java figcaption {
+  z-index: 1;
+  padding: 40px;
+}
+figure.snip1384-java h3,
+figure.snip1384-java .links {
+  width: 100%;
+  margin: 5px 0;
+  padding: 0;
+}
+figure.snip1384-java h3 {
+  line-height: 1.1em;
+  font-weight: 700;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  opacity: 0;
+}
+figure.snip1384-java p {
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  opacity: 0;
+  top: 50%;
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+}
+figure.snip1384-java i {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 20px 25px;
+  font-size: 34px;
+  opacity: 0;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+figure.snip1384-java a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+figure.snip1384-java:hover img,
+figure.snip1384-java.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+figure.snip1384-java:hover:after,
+figure.snip1384-java.hover:after {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+figure.snip1384-java:hover h3,
+figure.snip1384-java.hover h3,
+figure.snip1384-java:hover p,
+figure.snip1384-java.hover p,
+figure.snip1384-java:hover i,
+figure.snip1384-java.hover i {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 1;
+}

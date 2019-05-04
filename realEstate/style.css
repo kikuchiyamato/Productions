@@ -121,3 +121,10 @@ h5{
     padding:5px;
 
 }
+
+/*フッター中央寄せ*/
+footer,.copy{
+    font-size:14px;
+    text-align: center;
+    width:auto;
+}

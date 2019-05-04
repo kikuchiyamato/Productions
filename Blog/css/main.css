@@ -29,7 +29,7 @@ html {
 }
 
 body{
-   background-image: url("../photo/background/blog7.jpg");
+    background-image: url("../photo/background/blog9.jpg");
        width:100%;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 body {
-     background-image: url("../photo/background/blog7.jpg");
+     background-image: url("../photo/background/blog9.jpg");
     width:100%;
    background-size: cover; /*  縦横比を崩さずに拡大 */
 	background-repeat: no-repeat; /* 背景画像を1回表示して繰り返さない。 */
@@ -149,7 +149,7 @@ section .slideCell img + p {
 }
 section .cell-other:hover,
 section .slideCell:hover {
-  background-color: #505050;
+/*  background-color: #505050;*/
   border-color: #7c7c7c;
 }
 
@@ -160,7 +160,7 @@ footer {
   width: 100%;
   height: 41px;
   border-top: 1px solid #313131;
-  background-color: #000;
+/*  background-color: #000;*/
 }
 footer .left {
   position: absolute;

@@ -26,21 +26,33 @@ $(function(){
     });  
     
 });
+    
+    /* フィギュキャプション*/
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
 </script>
 </head>
     
 <!--画面外の余白を０にする-->
 <body leftmargin="0" topmargin="0" rightmargin="0 "bottommargin="0"> 
+    
+    <header>
+        <a href="https://github.com/kikuchiyamato">
+            <img src="imgs/GitHub-logo.png" width="60" height="60"></a>
+    
+    </header>
 
     
 <div id="section1">    
-    <table class="title" border="0" cellspacing="0">
-  <tr>
-    <th>Portfolio
-        <span class="sub1">I wanna Be An Engineer</span>
-        </th>
-    </tr>
-    </table>
+   <div class="title1" >
+    <a>Portfolio
+        <span class="sub1">I wanna Be An Engineer!</span>
+        </a>
+    </div>
+   
     
 <!--スクロールボタン-->
 <div class="scroll">
@@ -51,19 +63,17 @@ $(function(){
     <br>
     
  <div id="section2">   
-    <table class="title" border="0" cellspacing="0">
-         <tr>
-       <th colspan="2" valign="middle">自己紹介
+     
+    <div class="title2" >
+       <a >自己紹介
         <span class="sub2">About</span>
-        </th>
-       </tr>
-         
-        <tr>
-         <td class="small">
-         <img src="./imgs/neko.png" valign="top" align="right" width="300px" height="300px">    
-             </td>
+     </a>
+     </div> 
+
+         <img src="./imgs/neko.png"   width="300px" height="300px" class="nyan">    
             
-             <td class="big">
+            
+
             <ul>
                  <li>　名前：　Kikuchi Yamato</li>
                  <li>　出身：　千葉県市川市</li>
@@ -73,9 +83,7 @@ $(function(){
                 　　　　　専任の宅地建物取引士として契約業務を担当。</li>
                <li>その他：  　猫が好き。</li>
                  </ul>
-             </td>
-         </tr>
-     </table>
+    
      
 <!--スクロールボタン-->
 <div class="scroll2">
@@ -86,70 +94,126 @@ $(function(){
     
     
     
-<div id="section3">   
-    <table class="title" border="0" cellspacing="10">
-         <tr>
-       <th colspan="3" valign="middle" height="150">制作実績
+<div id="section3">  
+    
+
+    <div class="title3" >
+       <a>制作実績
         <span class="sub2">Web制作</span>
-        </th>
-       </tr>
-         
-        <br>
-        <tr>
-            
-            <td style="text-align:right;"><a href="http://kikuchiportfolio.moo.jp/restaurant-contents/main/index.html"><img src="./imgs/sapori-tr.png"></a></td>
-            
-            <td><a href="http://kikuchiportfolio.moo.jp/blog/index.html"><img src="./imgs/blog.png"></a></td>
-            
-            <td style="text-align:left;"><a href="http://kikuchiportfolio.moo.jp/realEstate/index.html"><img src="./imgs/realEstate.png"></a></td>
-            
-         </tr>
-     </table>
+        </a>
+    </div>
+    
+    
+<!--    <div class="figure-img-float">-->
+<div class="imggn">
+<figure class="snip1384">
+         <img src="./imgs/sapori-tr.png" alt="レストラン" />
+  <figcaption>
+    <h3>レストラン</h3>
+    <p>[HTML CSS JQuery]　by Mac<br>
+      制作期間：約1ヶ月<br>
+      ステップ数：6ファイル作って平均206ステップ。<br>
+      コメント：初めて制作した架空レストランのHPです。</p><i class="ion-ios-arrow-right"></i>
+  </figcaption>
+  <a href="http://kikuchiportfolio.moo.jp/restaurant-contents/main/index.html"></a>
+</figure>
+    
+     <figure class="snip1384">
+             <img src="./imgs/blog1.png" alt="ブログ" />
+  <figcaption>
+    <h3>ブログ</h3>
+    <p>[HTML CSS JavaScript JQuery]　by Mac<br>
+      制作期間：約2日<br>
+      ステップ数：5ファイル作って平均176ステップ。<br>
+      コメント：縦スクロールを沢山使った個性的なブログです。<br>
+      </p><i class="ion-ios-arrow-right"></i>
+  </figcaption>
+<a href="http://kikuchiportfolio.moo.jp/blog/index.html"></a>
+</figure>
+    
+     <figure class="snip1384">
+             <img src="./imgs/realEstate.png" alt="不動産" />
+  <figcaption>
+    <h3>不動産</h3>
+    <p>[HTML CSS JQuery]　by Mac<br>
+      制作期間：約3日<br>
+    　ステップ数：2ファイル作って平均149ステップ。<br>
+      コメント：架空不動産屋のHPです。<br></p><i class="ion-ios-arrow-right"></i>
+  </figcaption>
+ <a href="http://kikuchiportfolio.moo.jp/realEstate/index.html"></a>
+</figure>
+     
+    </div>
+    </div>
      
 <!--スクロールボタン-->
 <div class="scroll3">
-<a href="#section4"><span></span>JAVA・PHP</a>
+<a href="#section4"><span></span>Webシステム開発</a>
     </div>  
      
-    </div>
-
-        
+    
+    
+    
+ 
 <div id="section4">   
-    <table class="title" border="0" cellspacing="50">
-         <tr>
-       <th colspan="3" valign="top"> 
-        <span class="sub2">JAVA・PHP</span>
-        </th>
-       </tr>
-         
-        <tr>
-            
-        <td style="text-align:right;"><img src=></td>
-            
-        <td><img src=></td>
-            
-        <td style="text-align:left;"><img src=></td>
-            
-         </tr>
-     </table>
-     
+<div class="title4" >
+        <span class="sub2">Webシステム開発</span>
+    </div>
+    
+
+<!--    グーグルドライブ共有-->
+    <div class="java">
+      <figure class="snip1384-java">
+<img src="./imgs/java_portfoliobtn.png" alt="java" />
+  <figcaption>
+    <h3>ECサイト</h3>
+    <p>[Java HTML CSS JQuery JavaScript]　by Mac<br>
+        制作期間：約3週間<br>
+        ステップ数：14ファイル作って、平均104ステップ。<br>
+        コメント：チーム開発では<span style="text-decoration:underline;">新規ユーザー登録画面</span>と<span style="text-decoration:underline;">パスワード再設定画面</span>を担当。<br>
+　　　　　その他制作物一覧。<br>
+      </p><i class="ion-ios-arrow-right"></i>
+  </figcaption>
+<a href="https://drive.google.com/drive/folders/1gmle-vD2BJDr2n_tLsvOjkZjlPVundW2?usp=sharing"></a>
+</figure>
+    </div>
+   
 <!--スクロールボタン-->
 <div class="scroll4">
 <a href="#section5"><span></span>Contact</a>
     </div>  
      
     </div>
-
     
     
     
-    
-    
-<footer>
-</footer>
+    <div id="section5"> 
+<!--コンタクトフォーム埋め込み        -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSck4brRmXH8tfIchobdLKkpm22butilMKvNyFknUfOVLsP_XA/viewform?embedded=true" width="640" height="756" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
+        
+        
+        
+        
+        
+    </div>
 
     </body>
+        
+<footer>
+   <p class="copy">COPYRIGHT &#169; Kikuchi</p> 
+</footer>
 </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
