@@ -172,3 +172,64 @@ footer .right {
   right: 0;
   top: 0;
 }
+
+/*　画面サイズ 499pxまで適用　*/
+ @media screen and (max-width: 499px) { 
+    
+   
+header{
+    width:100%;
+    height:50px;
+}
+
+header .icon{
+    line-height:40px;
+    margin:10px 5px 5px 5px;
+}
+     
+     .icon img{  
+    width:30px;
+    height:30px;  
+     }
+     
+/*タイトル*/
+.none{
+    font-size:15px;
+    margin-left:5px;
+    margin-right:100px;
+}  
+     
+     
+/*　画面サイズ 500pxから999pxまで適用　*/
+  @media screen and (min-width: 500px) and (max-width: 999px) { 
+     
+header{ white-space: nowrap;
+    max-width: 100%;
+    width:100%;
+    height:50px;
+}
+
+header .icon{
+     white-space: nowrap;
+    line-height:3;
+    margin:10px 5px 5px 5px;
+}
+     
+     .icon img{  
+    width:30px;
+    height:30px;  
+     }
+     
+/*タイトル*/
+.none{
+    white-space: nowrap;
+    font-size:15px;
+    margin-left:5px;
+    margin-right:100px;
+}  
+      
+      
+      
+      
+      
+     }
