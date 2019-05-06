@@ -131,11 +131,9 @@ footer,.copy{
 
 /*　画面サイズ 499pxまで適用　*/
  @media screen and (max-width: 499px) { 
-     html,body{
+html,body{
          margin:0 auto;
          max-width: 100%;
-/*         text-align: center;*/
-         
      }
      
 header {
@@ -143,8 +141,9 @@ header {
   background: #eff7ff;
          height:45px; 
 }
-     .sp{display: block;}
-    .pc{display:none;}
+.sp{display: block;}
+.pc{display:none;}
+     
 header li{
 display: block;
     clear: both;
@@ -288,7 +287,7 @@ lavel{
   vertical-align: middle;
 }
 
-/*ハンバーガーアイコンをCSSだけで表現*/
+/*ハンバーガーアイコンをCSSだけで*/
 #nav-open span, #nav-open span:before, #nav-open span:after {
   position: absolute;
   height: 3px;/*線の太さ*/
