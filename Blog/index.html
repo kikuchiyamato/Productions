@@ -62,9 +62,27 @@ $(function(){
     
     
 <body>
+    
+    
+   <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> 
+    
+      
 <div id="wrapper">
 <section id="main"> 
-<!-- imgを使用する場合はサイズを指定しておく -->
+<!-- imgはここでサイズを指定してる -->
 <div class="slideFrame" id="slider-0">
 <ul class="slideGuide up">
 <li class="slideCell"> <img src="photo/300/blog-300.jpg" alt="" width="300" height="300">
@@ -93,7 +111,7 @@ $(function(){
 <li class="slideCell"><img src="photo/122/Cat4.jpg" alt="" width="122" height="122"></li>
 <li class="slideCell"><img src="photo/122/Cat5.jpg" alt="" width="122" height="122"></li>
 </ul>
-<div class="slideCtrl up">prev</div>
+<!--<div class="slideCtrl up">prev</div>-->
 <div class="slideCtrl down">next</div>
 </div>
 <div class="slideFrame" id="slider-2">
@@ -109,7 +127,7 @@ $(function(){
 <li class="slideCell"><img src="photo/60/9.jpg" alt="" width="60" height="60"></li>
 <li class="slideCell"><img src="photo/60/10.jpg" alt="" width="60" height="60"></li>
 </ul>
-<div class="slideCtrl up">prev</div>
+<!--<div class="slideCtrl up">prev</div>-->
 <div class="slideCtrl down">next</div>
 </div>
 <div class="slideFrame" id="slider-3">
@@ -124,19 +142,6 @@ $(function(){
 </div>
     
     
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </body>
 </html>

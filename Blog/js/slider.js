@@ -1,17 +1,4 @@
-/**
- * slider
- *
- * multirole slider plug-in
- *
- * @category	jQuery plugin
- * @license		http://www.opensource.org/licenses/mit-license.html	 MIT License
- * @copyright	2010 RaNa design associates, inc.
- * @author		keisuke YAMAMOTO <keisukey@ranadesign.com>
- * @link		http://www.ranadesign.com/
- * @version		4.0
- * @since		Aug 30, 2010
- * @update		Feb 13, 2014
- */
+
 
 ;(function($) {
 

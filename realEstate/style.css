@@ -99,6 +99,9 @@ h5{
     text-align: center;
     padding:30px; 
 }
+ul li {
+    list-style: none;
+}
 .conform{
     margin:0 auto;
     
@@ -164,14 +167,8 @@ display: block;
     max-width: 100%;
     width:100%;
     height:auto;
-/*    z-index: 10000;*/
 }
-/*
-.sp-contents{
-       margin:0 auto;
-    max-width: 100%;
-     }    
-*/
+
 h1{
      font-size:20px;
     margin-left:10px;
@@ -361,9 +358,9 @@ lavel{
      max-width: 80%;
     text-align: center;
     padding:10px 10px 10px 10px; 
-}
-      
+}     
 ul li {
+    
     list-style: none;
 }
 lavel{
@@ -374,6 +371,112 @@ lavel{
     
 }
     
+/*　画面サイズ 500pxから999pxまで適用　*/
+  @media screen and (min-width: 500px) and (max-width: 999px) {
+html,body{
+         margin:0 auto;
+         max-width: 100%;
+     }
+ #slider img{
+    max-width: 100%;
+    width:100%;
+    height:auto;
+}    
+header li{
+display: block;
+margin: 0px;
+
+}     
+ .real{
+     margin:0 auto;
+     margin-left:-30px;
+     margin-right:10px;
+     font-size: 30px;
+     
+     }
+      .menu{
+        font-size: 25px;  
+      }      
+      
+.pc { display:block; }
+.sp { display:none; }
+.con-pcr{
+      font-size:20px;
+    line-height:30px;
+    margin:20px 0px 60px 3px;
+}  
+ .contact{
+     border:solid 0.5px black;
+    margin:0 auto;
+     max-width: 80%;
+    text-align: center;
+    padding:10px 10px 10px 10px; 
+}      
+  .left img{
+         max-width: 100%;
+         text-align: center;
+         width:97%;
+         height:auto;
+         margin-left: 10px;
+         margin-top:-5px;
+     }     
+     .left-posi{
+         position:absolute;
+         top:590px;
+         left:370px;
+         white-space: nowrap;
+         padding:15px 10px 15px 10px;}
+      
+      .font{
+          position: absolute;
+          top:540px;
+          left:450px;
+          font-size:60px;
+      }
+      .ki{
+       display: none;
+      }           
+      
+ lavel{
+    margin-right: 30px;
+     width:100%;
+    float: left;
+}     
+      
+      h1{
+          margin-left:50px;
+      }      
+  .right{
+         clear: both;
+     }
+/*
+        .right img{
+        max-width: 100%;
+            width:100%;
+            height:auto;
+     }    
+*/
+/*      テーブル名*/
+     .sp-layout{
+        border-collapse:collapse;
+/*         border-spacing: 1px;*/
+/*        white-space: nowrap;*/
+         width:100;
+         margin-top: 30px;
+         text-align: center;
+     }
+        .sp-layout img{
+            width:360px;
+            height:auto;
+     } 
+      h5{
+         font-size:22px;
+     }  
+    h6{
+         font-size:15px;
+     }  
+      
+  }
 
 
 

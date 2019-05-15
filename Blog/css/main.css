@@ -79,16 +79,6 @@ body {
     width:100%;
    background-size: cover; /*  縦横比を崩さずに拡大 */
 	background-repeat: no-repeat; /* 背景画像を1回表示して繰り返さない。 */
-/*  background-color: #000;*/
-    
-/*    これがあると背景が隠れる*/
-/*  background-image: -webkit-gradient(linear, 0% 50%, 500 50%, color-stop(44%, #000000), color-stop(100%, #303030));*/
-
-/*  background-image: -webkit-linear-gradient(left, #000000 220px, #303030 500px);*/
-/*  background-image: -moz-linear-gradient(left, #000000 220px, #303030 500px);*/
-/*  background-image: -o-linear-gradient(left, #000000 220px, #303030 500px);*/
-/*  background-image: linear-gradient(left, #000000 220px, #303030 500px);*/
-/*  color: #fff;*/
 
 }
 
@@ -172,6 +162,8 @@ footer .right {
   right: 0;
   top: 0;
 }
+
+
 
 /*　画面サイズ 499pxまで適用　*/
  @media screen and (max-width: 499px) { 
