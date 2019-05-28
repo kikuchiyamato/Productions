@@ -18,24 +18,12 @@ header img{
     right:20px;
 }
 
-/*
-.title{
-   width:100%;
-    height:700px;
-    margin:0 auto;
-}
-*/
 
 
 
 
 /*英語＆日本語タイトル*/
-/*
-.title{
-    font-size:40px;
-    text-align: center;  
-}
-*/
+
 .title1{
     font-family: 'Cinzel', serif;
     font-size:40px;
@@ -61,29 +49,6 @@ header img{
     padding:50px;
 }
 
-.title4{
-    font-family: 'Cinzel', serif;
-    font-size:40px;
-    text-align: center;
-    margin-top: 650px;
-    margin-bottom:60px;
-    padding:50px;
-}
-.nyan{
-    float: left;
-    margin:70px 50px 0px 350px;
-    width:300px;
-    height:300px;
-    border-radius: 40px;
-}
-/*自己紹介文height*/
-ul{float: left;
-    margin:50px 0px 0px 0px;
-}
-li{
-    list-style: none;
-    line-height:45px;
-}
 
 figure.snip1384 {
     float: left;
@@ -105,15 +70,13 @@ figure.snip1384 {
     width:1000px;
     height:300px;
 }
-#section5{
+#section4{
     max-width: 70%;
     margin: 0 auto;
     margin-top:400px;
     padding:50px;
     text-align: center;
-    
-    
-/*    margin:300px 0px 0px 400px;*/
+
 }
 
 /*フッター中央寄せ*/
@@ -169,7 +132,7 @@ margin-right: 0.5rem;
 margin-left: 0.5rem;
 }
 
-/*自己紹介のスクロールボタンの指定*/
+/*制作実績を見るのスクロールボタンの指定*/
 .scroll {
   position: absolute;
   top:650px;
@@ -232,10 +195,11 @@ margin-left: 0.5rem;
 }
 
 
-/*制作実績のスクロールボタンの指定*/
+/*Webシステム開発のスクロールボタンの指定*/
+
 .scroll2 {
   position: absolute;
-  top:1490px;
+  top:1670px;
 　z-index:9;
   width: 100%;
   bottom: 0;
@@ -248,7 +212,9 @@ margin-left: 0.5rem;
     color: black;
     text-decoration: none;
 }
+
 /*矢印クルクルのcss*/
+
 .scroll2 a span {
   position: absolute;
   top: 20px;
@@ -267,6 +233,7 @@ margin-left: 0.5rem;
 }
 
 /*矢印の動き方（y軸方向に回転）指定*/
+
 @-webkit-keyframes sdb {
   0% {
     -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
@@ -295,14 +262,16 @@ margin-left: 0.5rem;
 }
 
 
-/*制作実績のスクロールボタンの指定*/
+
+/*コンタクトのスクロールボタンの指定*/
 .scroll3 {
   position: absolute;
-  top:2450px;
+  top:2830px;
 　z-index:9;
   width: 100%;
   bottom: 0;
   text-align: center;
+
 }
   .scroll3 a{
     font-size: 20px;
@@ -356,67 +325,7 @@ margin-left: 0.5rem;
     opacity: 0;
   }
 }
-/*制作実績のスクロールボタンの指定*/
-.scroll4 {
-  position: absolute;
-  top:3285px;
-　z-index:9;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-}
-  .scroll4 a{
-    font-size: 20px;
-      font-family: 'Cinzel', serif;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-}
-/*矢印クルクルのcss*/
-.scroll4 a span {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  z-index:9;
-  width: 20px;
-  height: 20px;
-  margin-left: -12px;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb 2s infinite;
-  animation: sdb 2s infinite;
-  box-sizing: border-box;
-}
 
-/*矢印の動き方（y軸方向に回転）指定*/
-@-webkit-keyframes sdb {
-  0% {
-    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
-@keyframes sdb {
-  0% {
-    transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
 
 
 /*フィギュキャプション*/
@@ -827,22 +736,19 @@ figure.snip1384-java{
       #section4{
           margin-top:900px;
       } 
-      #section5{
-          margin-top:500px;
-      }
+
+/*
       
       .scroll2{
          position: absolute;
-         top:1700px;  
+         top:1600px;  
   }
          .scroll3{
          position: absolute;
-         top:2840px;  
+         top:2800px;  
   }
-      .scroll4{
-          position: absolute;
-         top:3920px; 
-      }  
+*/
+
       
 
 }
