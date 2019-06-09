@@ -6,6 +6,8 @@
 <title>Portfolio</title>
     
 <link rel="stylesheet" type="text/css" href="style.css">
+<!--共通リセットCSS-->
+<link rel="stylesheet" type="text/css" href="../reset/style.css">
     
 <!--jQuery呼び出し-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
@@ -17,11 +19,11 @@
 $(function(){
     $('a[href^="#"]').click(function(){
         var speed = 500;
-//        var headerHight=100;
+//       var headerHight=350;
         var href= $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);
         var position = target.offset().top;
-//        var position = target.offset().top-headerHight; 
+//       var position = target.offset().top-headerHight; 
         $("html, body").animate({scrollTop:position}, speed, "swing");
         return false;
     });  
@@ -35,42 +37,47 @@ $(".hover").mouseleave(
   }
 );
 </script>
+    
+    
+    
 </head>
     
 <!--画面外の余白を０にする-->
 <body leftmargin="0" topmargin="0" rightmargin="0 "bottommargin="0"> 
     
     <header>
+        <div id="top">&emsp; </div>
+        
         <a href="https://github.com/kikuchiyamato">
-            <img src="imgs/GitHub-logo.png" width="60" height="60" class="git"></a>
+            <img src="imgs/GitHub-logo.png" width="80" height="80" class="git"></a>
     
     </header>
 
+<!--葉っぱの輪っか-->
+    <div class="tyuuou_happanowakka">
+        <img src="imgs/happa.png" class="happanowakka"></div>
     
 <div id="section1">    
    <div class="title1" >
     <a>KIKUCHI's&ensp;Portfolio
-        <span class="sub1">勉強用です</span>
+        <span class="sub1">Become an Engineer</span>
         </a>
-    </div>
-   
     
+    <br>
 <!--スクロールボタン-->
-<div class="scroll">
-<a href="#section2"><span></span>制作実績を見る</a>
-    </div> 
+    <div class="jisseki">
+    <a href="#section2">制作実績を見る</a>
     </div>
+    </div>    
+    </div> 
+
     
-   
- 
-   
+    
     
     
     
 <div id="section2">  
-    
-
-    <div class="title2" >
+    <div id="title2" >
        <a>制作実績
         <span class="sub2">Web制作</span>
         </a>
@@ -80,29 +87,32 @@ $(".hover").mouseleave(
 <!--    <div class="figure-img-float">-->
 <div class="imggn">
 <figure class="snip1384">
-    <div class="pc"><img src="./imgs/sapori-tr.png" alt="レストラン" /></div>
-<div class="sp"><img src="./imgs/sapori-trCopy.png" alt="レストラン" /></div>
+<img src="./imgs/sapori-tr.png" alt="レストラン" />
+<!--<div class="sp"><img src="./imgs/sapori-trCopy.png" alt="レストラン" /></div>-->
   <figcaption>
     <h3>レストラン</h3>
     <p>[HTML CSS JQuery]　by Mac<br>
       制作期間：約1ヶ月<br>
-      ステップ数：6ファイル作って平均206ステップ。<br>
-<!--      コメント：初めて制作した架空レストランのHPです。<br>-->
+      ステップ数：6ファイル作って<br>平均206ステップ。<br>
+      <br>
+     [レスポンシブ非対応]
+
   </p><i class="ion-ios-arrow-right"></i>
   </figcaption>
   <a href="http://kikuchiportfolio.moo.jp/restaurant-contents/main/index.html"></a>
 </figure>
     
      <figure class="snip1384">
-         <div class="pc"><img src="./imgs/blog1.png" alt="ブログ" /></div>
-           <div class="sp"><img src="./imgs/blog1Copy.png" alt="ブログ" /></div>
+   <img src="./imgs/blog1.png" alt="フォトギャラリー" />
+<!--           <div class="sp"><img src="./imgs/blog1Copy.png" alt="ブログ" /></div>-->
          
   <figcaption>
     <h3>ブログ</h3>
     <p>[HTML CSS JavaScript JQuery]　by Mac<br>
       制作期間：約1週間<br>
-      ステップ数：5ファイル作って平均176ステップ。<br>
-<!--      コメント：縦スクロールを沢山使った個性的なブログです。<br>-->
+      ステップ数：5ファイル作って<br>平均176ステップ。<br>
+        <br>
+    [レスポンシブ非対応]
  <br>
       </p><i class="ion-ios-arrow-right"></i>
   </figcaption>
@@ -110,14 +120,14 @@ $(".hover").mouseleave(
 </figure>
     
      <figure class="snip1384">
-         <div class="pc"><img src="./imgs/realEstate.png" alt="不動産" /></div>
-          <div class="sp"><img src="./imgs/realEstateCopy.png" alt="不動産" /></div>  
+         <img src="./imgs/realEstate.png" alt="不動産" />
+<!--          <div class="sp"><img src="./imgs/realEstateCopy.png" alt="不動産" /></div>  -->
   <figcaption>
     <h3>不動産</h3>
     <p>[HTML CSS JQuery]　by Mac<br>
       制作期間：約3日<br>
-    ステップ数：4ファイル作って平均188ステップ。<br>
-<!--      コメント：架空不動産屋のHPです。<br>-->
+    ステップ数：4ファイル作って<br>平均188ステップ。<br>
+
 <br>
       [レスポンシブ対応]<br></p><i class="ion-ios-arrow-right"></i>
   </figcaption>
@@ -126,12 +136,6 @@ $(".hover").mouseleave(
      
     </div>
     </div>
-     
-<!--スクロールボタン-->
-<div class="scroll2">
-<a href="#section3"><span></span>Webシステム開発</a>
-    </div>  
-       
     
  
 <div id="section3"> 
@@ -155,7 +159,7 @@ $(".hover").mouseleave(
         コメント：チーム開発では<span style="text-decoration:underline;">新規ユーザー登録画面</span>と<span style="text-decoration:underline;">パスワード再設定画面</span>を担当。<br>
 　　　　　その他制作物一覧。<br>
       </p>
-      
+          
       </p><i class="ion-ios-arrow-right"></i>
   </figcaption>
           
@@ -165,15 +169,21 @@ $(".hover").mouseleave(
   </div>  
    
 <!--スクロールボタン-->
+<!--
 <div class="scroll3">
 <a href="#section4"><span></span>Contact</a>
     </div>  
      
+-->
     
     
     
     
-    <div id="section4"> 
+    <div class="section4"> 
+        
+<div class="title4" >
+    <a>Contact Form<span class="sub3">お気軽にどうぞ。</span></a>
+    </div>
 <!--コンタクトフォーム埋め込み        -->
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSck4brRmXH8tfIchobdLKkpm22butilMKvNyFknUfOVLsP_XA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0"  class="contact-form">読み込んでいます...</iframe>
 <!--
@@ -184,7 +194,13 @@ $(".hover").mouseleave(
         
         
     </div>
-
+    
+<div class="GoToTop">
+    <a href="#top">
+        <img src="imgs/Up.png"> </a>
+    
+    </div>
+    
     </body>
         
 <footer>

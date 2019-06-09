@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Gruppo|Noto+Serif+JP|Rock+Salt');
 
+/* chrome safari opera */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    
 html{
     overflow:auto; 
     background-color:#ffe2c6;
@@ -37,7 +40,7 @@ header li{
     font-size:35px;
     color:white;
     margin-left:0px;
-    margin-right: 160px;
+    margin-right: 100px;
 }
 
 /*ヘッダー*/
@@ -447,3 +450,4 @@ margin-right: 0.5rem;
 margin-left: 0.5rem;
 }
 
+}

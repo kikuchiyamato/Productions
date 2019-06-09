@@ -1,5 +1,9 @@
 /* slider (base)
 --------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+
 .slideFrame {
   overflow: hidden;
   width: 100%;
@@ -20,12 +24,13 @@
   margin-bottom: 10px;
 }
 
-/* controller */
+/* ボタンの位置。ここは後で調整*/
 .slideCtrl {
   position: absolute;
+  top:300px;
   background-color: rgba(128, 128, 128, 0.7);
   color: #fff;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
 }
@@ -36,18 +41,107 @@
   height: 100%;
 }
 */
+/*元々のホバーボタン*/
 .slideCtrl.down {
   left: 0;
   width: 100%;
   height: 60px;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 60px;
 }
 
-
+/*キューブ型ホバーボタン*/
 .slideCtrl.down {
-  bottom: 0;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
 }
+.slideCtrl.down::before,
+.slideCtrl.down::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.slideCtrl.down,
+.slideCtrl.down::before,
+.slideCtrl.down::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+/*ここでキューブの動き指定*/
+.slideCtrl.down {
+/*  position: relative;*/
+  -webkit-perspective: 300px;
+  perspective: 300px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.slideCtrl.down span {
+  display: block;
+  position: absolute;
+  width: 100%;
+/*  height: 60px;*/
+  border: 2px solid #333;
+  text-align: center;
+  line-height: 56px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  pointer-events: none;
+　font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*キューブのホバー後*/
+.slideCtrl.down span:nth-child(1) {
+  background-color:rgba( 255, 249, 141, 0.2);
+  color: #fff;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -30px;
+  -moz-transform-origin: 50% 50% -30px;
+  transform-origin: 50% 50% -30px;
+}
+
+/*キューブのホバー前*/
+.slideCtrl.down span:nth-child(2) {
+  background-color: rgba( 92, 112, 204, 0.2);
+  color: #333;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -30px;
+  -moz-transform-origin: 50% 50% -30px;
+  transform-origin: 50% 50% -30px;
+}
+.slideCtrl.down:hover span:nth-child(1) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.slideCtrl.down:hover span:nth-child(2) {
+  background-color: #333;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+
+
+
+
+
+
+
+
 
 /* slider-0
 */
@@ -99,13 +193,17 @@
  */
 #slider-3.slideFrame {
   float: right;
-  width: 265px;
+  width: 305px;
   margin-left: 10px;
 }
 #slider-3.slideFrame .cell-other {
   width: 263px;
   margin-bottom: 10px;
 }
+#slider-3.slideFrame .cell-other:hover {
+  background-color: rgba(128, 128, 128,0.3);
+}
+
 #slider-3.slideFrame .cell-other img {
   display: block;
 }

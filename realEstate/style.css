@@ -2,9 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
 
+/* chrome safari opera */	
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
 html,body{
     margin:0;
     background-color:#eff7ff;
+    max-width: 100%;
 }
 
 header{
@@ -40,90 +44,135 @@ header li{
     font-size:25px;
 }
 .real{font-size:40px;
-    margin-right:450px;
+    margin-right:80px;
 }
 
 .leftcon{
-    float:left;
-    margin:20px 50px 0px 250px;
+width:100%;
 }
+ 
+.right .pho{
+        width:300px;
+        height:205px;
+    }
 
-h1{
-    margin-left:230px;
-    margin-top:100px;
-}
-
-.photo{
-    margin:-20px 10px -30px 10px;
-}
-h5{
-    margin-top:-20px;
-    margin-bottom: 40px;
-}
 .left-posi{
-    clear: both;
     position:absolute;
     top:1520px;
-    left:270px;
+    left:30px;
     background-color:white;
-    padding:25px 20px 25px 20px;
+    padding:25px 20px 20px 20px;
 }
 .mgn{
-/*    padding:10px 0px 10px 0px;*/
     margin-top:-20px;
 }
 
 .font{
     position:absolute;
-    top:1445px;
-    left:150px;
+    top:1485px;
+    left:70px;
     color:#99ccff;
-    font-size:80px;
+    font-size:70px;
     font-family: 'Homemade Apple', cursive;
     
 }
+    
+.sp-contents{
+     width:96%;
+    text-align: center;
+    margin:0 auto;
+    margin:0px 30px 0px 30px;
+    }
+    .sp-contents,.left{
+        display: flex;
+    }  
+.ue-imgs{
+       display:flex;
+}   
+.ue{
+        margin:0px 5px 0px 7px;
+    }
+.shita{
+        margin:0px 5px 0px 7px;
+    }
+ .shita-imgs{
+       display:flex;
+}     
+    
+h1{    padding-left: 50px;
+       padding-top:50px;
+       text-align: left; 
+    }
+    
+ .concept{
+     width:100%;
+    text-align: center;
+    }
+.contact{
+    width:100%;
+    text-align: center;
+}
+
 .con-pcr{
-    line-height:50px;
-    text-align: left;
-    margin:20px 0px 0px 260px;
+    line-height:30px;
+    text-align: center;
+    width:100%;
 }
 
 .ki{
     position:absolute;
-    top:1740px;
-    left:900px;
+    top:2090px;
+    left:800px;
 }
-.contact{
-/*    width:100%;*/
-    margin:0px 100px 100px 100px;
-    text-align: center;
-    padding:30px; 
-}
+
 ul li {
     list-style: none;
 }
-.conform{
-    margin:0 auto;
-    
+
+/*お問い合わせタイトルボックス   */
+.kakomi-box11 {
+ position: relative;
+ margin:0 auto;
+ padding: 1.2em;
+ color: #555555; /* 文章色 */
+ background-color: #eff7ff; /* 背景色 */
+ border: 0.5px solid #555555; /* 枠線の太さ・色 */
+ width: 65%;
+}
+.title-box11 {
+ position: absolute;
+ padding: 0 .5em;
+ left: 20px;
+ top: -15px;
+ font-weight: bold;
+ background-color: #eff7ff; /* タイトル背景色 */
+ color: #555555; /* タイトル文字色 */
 }
 
+textarea{
+    font-size:16px;
+    border:none;
+    }
+    
+/*テキストボックス*/
+.cp_iptxt {
+	position: relative;
+	width: 70%;
+	margin: 10px 3%;
+    display: inline-block; 
+}
 
-.wak{
- margin: -370px 0px 100px 70px;
-        border:0.5px solid black;
-        width:90%;
-    height:370px;
     
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	padding-left: 40px;
+	letter-spacing: 1px;
+	border: 0;
 }
-.btn{
-    text-align: right;
-    
-}
-.sizem{
-    
-    padding:5px;
-
-}
+   
 
 /*フッター中央寄せ*/
 footer,.copy{
@@ -132,8 +181,24 @@ footer,.copy{
     width:auto;
 }
 
-/*　画面サイズ 499pxまで適用　*/
- @media screen and (max-width: 499px) { 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+/*　画面サイズ 1000pxまで適用　*/
+ @media screen and (max-width: 1000px) { 
 html,body{
          margin:0 auto;
          max-width: 100%;
@@ -152,9 +217,9 @@ display: block;
     clear: both;
 }     
  .real{
-         white-space: nowrap;
+     white-space: nowrap;
      margin:0 auto;
-     max-width: 90%;
+/*     max-width: 90%;*/
      text-align: center;
      }
 .menu span{
@@ -164,7 +229,7 @@ display: block;
           z-index: 9998;
      }
 #slider img{
-    max-width: 100%;
+/*    max-width: 100%;*/
     width:100%;
     height:auto;
 }
@@ -174,42 +239,72 @@ h1{
     margin-left:10px;
     margin-top:15px;
 }    
-     .left img{
-         max-width: 100%;
-         text-align: center;
-         width:95%;
+.leftcon{
+         width:100%;
          height:auto;
-         margin-left: 10px;
-         margin-top:-5px;
-     }     
-     .left-posi{
-         position:absolute;
-         top:300px;
-         left:185px;
-         white-space: nowrap;
-         padding:5px 5px 5px 5px;
-         
+         margin:0 auto;
+     }  
+       
+.left-posi{display: none;
      }   
-    .mgn{
-            font-size:10px; 
+.font{display: none;
      }
-     h6{
-        font-size:8px;  
+     
+     
+     
+     
+     
+/*ここから消さない！*/
+/*リフォーム無料相談会４箇所*/
+     
+.sp-contents,.left{
+   display:block;
+    }  
+     .sp-contents{
+      width:90%;     
      }
-     .font{
-         font-size:30px;
-         position: absolute;
-         top:280px;
-         left:220px;
+.right{
+    clear: both;
+    width:100%;
+    margin-top:20px;
+     }     
+    
+.right.ue{   
+        text-align:center;
+         width:100%;
+}     
+     
+.ue .pho{ 
+        margin: 0 auto;
+        text-align: left;
+         width: 100%;
+         height:auto;
+}
+/* 画像横並び 上  */
+.ue-imgs{
+       display:flex;
+}
+ .ue p{
+         margin:0px 0px 0px 20px;
      }
-     .right{
-         clear: both;
+       
+.right.shita{   
+        text-align:left;
+         width:100%;
+}     
+     
+.shita .pho{ 
+         width: 100%;
+         height:auto;
+}
+/* 画像横並び  下  */
+.shita-imgs{
+       display:flex;
+}
+     .shita p{
+         margin:0px 0px 0px 20px;
      }
-        .right img{
-        max-width: 100%;
-            width:100%;
-           margin-top:20px;
-     }
+
      .sp-layout{
         border-collapse:collapse;
          border-spacing: 1px;
@@ -220,49 +315,29 @@ h1{
             width:160px;
             height:auto;
      }
-            
-     h5{
-         font-size:11px;
-     }
-/*     テーブル画像の隙間埋める*/
+
+/* テーブル画像の隙間埋める*/
      .bottom{
          margin-bottom: -10px;
      }
      
   .con-pcr{
-      font-size:10px;
+      
+      font-size:15px;
     line-height:30px;
-    margin:20px 0px 60px 3px;
+      width:100%;
+
 }
      .ki{
-         width:100px;
-         height:100px;
-         position: absolute;
-         top:1100px;
-         left:250px;
+       display: none;
      }    
      
      .sp-contact{
          margin:0 auto;
-         max-width: 100%;
+/*         max-width: 100%;*/
          margin-left:0px;
      }   
-     .contact{
-     border:solid 0.5px black;
-    margin:0 auto;
-     max-width: 80%;
-    text-align: center;
-    padding:10px 10px 10px 10px; 
-}
-           
-ul li {
-    list-style: none;
-}
-lavel{
-    margin-right: 30px;
-     width:100%;
-    float: left;
-}
+
      
      
      
@@ -352,132 +427,13 @@ lavel{
 .pc { display:block; }
 .sp { display:none; }
       
- .contact{
-     border:solid 0.5px black;
-    margin:0 auto;
-     max-width: 80%;
-    text-align: center;
-    padding:10px 10px 10px 10px; 
-}     
+
 ul li {
     
     list-style: none;
 }
-lavel{
-    margin-right: 30px;
-     width:100%;
-    float: left;
-}
     
 }
-    
-/*　画面サイズ 500pxから999pxまで適用　*/
-  @media screen and (min-width: 500px) and (max-width: 999px) {
-html,body{
-         margin:0 auto;
-         max-width: 100%;
-     }
- #slider img{
-    max-width: 100%;
-    width:100%;
-    height:auto;
-}    
-header li{
-display: block;
-margin: 0px;
-
-}     
- .real{
-     margin:0 auto;
-     margin-left:-30px;
-     margin-right:10px;
-     font-size: 30px;
-     
-     }
-      .menu{
-        font-size: 25px;  
-      }      
-      
-.pc { display:block; }
-.sp { display:none; }
-.con-pcr{
-      font-size:20px;
-    line-height:30px;
-    margin:20px 0px 60px 3px;
-}  
- .contact{
-     border:solid 0.5px black;
-    margin:0 auto;
-     max-width: 80%;
-    text-align: center;
-    padding:10px 10px 10px 10px; 
-}      
-  .left img{
-         max-width: 100%;
-         text-align: center;
-         width:97%;
-         height:auto;
-         margin-left: 10px;
-         margin-top:-5px;
-     }     
-     .left-posi{
-         position:absolute;
-         top:590px;
-         left:370px;
-         white-space: nowrap;
-         padding:15px 10px 15px 10px;}
-      
-      .font{
-          position: absolute;
-          top:540px;
-          left:450px;
-          font-size:60px;
-      }
-      .ki{
-       display: none;
-      }           
-      
- lavel{
-    margin-right: 30px;
-     width:100%;
-    float: left;
-}     
-      
-      h1{
-          margin-left:50px;
-      }      
-  .right{
-         clear: both;
-     }
-/*
-        .right img{
-        max-width: 100%;
-            width:100%;
-            height:auto;
-     }    
-*/
-/*      テーブル名*/
-     .sp-layout{
-        border-collapse:collapse;
-/*         border-spacing: 1px;*/
-/*        white-space: nowrap;*/
-         width:100;
-         margin-top: 30px;
-         text-align: center;
-     }
-        .sp-layout img{
-            width:360px;
-            height:auto;
-     } 
-      h5{
-         font-size:22px;
-     }  
-    h6{
-         font-size:15px;
-     }  
-      
-  }
-
-
-
+  
+ }   
     

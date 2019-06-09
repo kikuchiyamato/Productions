@@ -27,11 +27,13 @@ time, mark, audio, video {
 html {
   line-height: 1;
 }
+/*
 
 body{
-    background-image: url("../photo/background/blog9.jpg");
+    background-image: url("../photo/background/s_blog9.jpg");
        width:100%;
 }
+*/
 
 ol, ul {
   list-style: none;
@@ -104,7 +106,7 @@ header{
     width:100%;
 /*headerの高さ*/
     height:100px;
-    background-color:rgba(255,255,255,0.3);
+    background-color:rgba(128,128,128,0.3);
 }
 
 header .icon{
@@ -121,7 +123,7 @@ header .icon{
     font-family: 'Rock Salt', cursive;/*走り書き英語*/
     margin-left:20px;
     text-decoration:none;
-    margin-right:800px;
+    margin-right:700px;
 }
 
 
@@ -132,6 +134,8 @@ section .slideCell {
   font-size: 10px;
   line-height: 1.25;
   cursor: pointer;
+    
+  padding:20px;
 }
 section .cell-other img + p,
 section .slideCell img + p {
@@ -139,7 +143,6 @@ section .slideCell img + p {
 }
 section .cell-other:hover,
 section .slideCell:hover {
-/*  background-color: #505050;*/
   border-color: #7c7c7c;
 }
 
@@ -163,6 +166,12 @@ footer .right {
   top: 0;
 }
 
+.fontyou{
+    font-size:50px;
+   font-weight: bold;
+   font-family: 'Rock Salt', cursive;/*走り書き英語*/
+    
+}
 
 
 /*　画面サイズ 499pxまで適用　*/

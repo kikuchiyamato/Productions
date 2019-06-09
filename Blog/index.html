@@ -3,9 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Healthy Blog</title>
+<title>Photo Gallery</title>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/slider.css">
+<!--共通リセットCSS-->
+<link rel="stylesheet" type="text/css" href="../reset/style.css">
+    
+    
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/slider.js"></script>
 <script>
@@ -48,7 +52,9 @@ $(function(){
     <header>
         
        <ul>     
-           <li class="icon"><a href="index.html" class="none">Healthy Blog</a></li>
+           <li class="icon"><a href="index.html" class="none"
+    style="-webkit-text-stroke-width:0.4px;
+-webkit-text-stroke-color:white;">Photo Gallery</a></li>
            
 <!--    アイコン群-->
            <li class="icon"><a href="https://twitter.com/"><img src="./photo/icon/icon2.png"></a></li>
@@ -85,57 +91,71 @@ $(function(){
 <!-- imgはここでサイズを指定してる -->
 <div class="slideFrame" id="slider-0">
 <ul class="slideGuide up">
-<li class="slideCell"> <img src="photo/300/blog-300.jpg" alt="" width="300" height="300">
+<li class="slideCell"> <img src="photo/300/s_blog-300.jpg" alt="" width="300" height="300">
 <p> Any woman who understands the problems of running a home will be nearer to understanding the problems of running a country.</p>
 </li>
-<li class="slideCell"> <img src="photo/300/blog-301.jpg" alt="" width="300" height="300">
+<li class="slideCell"> <img src="photo/300/s_blog-301.jpg" alt="" width="300" height="300">
 <p>I restore myself when I’m alone.</p>
 </li>
-<li class="slideCell"> <img src="photo/300/blog-302.jpg" alt="" width="300" height="300"> </li>
-<li class="slideCell"> <img src="photo/300/blog-303.jpg" alt="" width="300" height="300">
+<li class="slideCell"> <img src="photo/300/s_blog-302.jpg" alt="" width="300" height="300"> </li>
+<li class="slideCell"> <img src="photo/300/s_blog-303.jpg" alt="" width="300" height="300">
 <p> You’re all geniuses and you’re all beautiful. You don’t need anybody to tell you who you are or what you are. You are what you are.</p>
 </li>
-<li class="slideCell"> <img src="photo/300/blog-304.jpg" alt="" width="300" height="300">
+<li class="slideCell"> <img src="photo/300/s_blog-304.jpg" alt="" width="300" height="300">
 <p>You gods, will give us. Some faults to make us men.</p>
 </li>
-<li class="slideCell"> <img src="photo/300/blog-305.jpg" alt="" width="300" height="300">
+<li class="slideCell"> <img src="photo/300/s_blog-305.jpg" alt="" width="300" height="300">
 <p>Talking much about oneself can also be a means to conceal oneself.</p>
 </li>
 </ul>
 </div>
+    
+<!--ここでSpeed Up!のbackground-colorとか指定してる。-->
 <div class="slideFrame" id="slider-1">
 <ul class="slideGuide down">
-<li class="slideCell"><img src="photo/122/Cat1.jpg" alt="" width="122" height="122"></li>
-<li class="slideCell"><img src="photo/122/Cat2.jpg" alt="" width="122" height="122"></li>
-<li class="slideCell"><img src="photo/122/Cat3.jpg" alt="" width="122" height="122"></li>
-<li class="slideCell"><img src="photo/122/Cat4.jpg" alt="" width="122" height="122"></li>
-<li class="slideCell"><img src="photo/122/Cat5.jpg" alt="" width="122" height="122"></li>
+<li class="slideCell"><img src="photo/122/s_Cat1.jpg" alt="" width="122" height="122"></li>
+<li class="slideCell"><img src="photo/122/s_Cat2.jpg" alt="" width="122" height="122"></li>
+<li class="slideCell"><img src="photo/122/s_Cat3.jpg" alt="" width="122" height="122"></li>
+<li class="slideCell"><img src="photo/122/s_Cat4.jpg" alt="" width="122" height="122"></li>
+<li class="slideCell"><img src="photo/122/s_Cat5.jpg" alt="" width="122" height="122"></li>
 </ul>
-<!--<div class="slideCtrl up">prev</div>-->
-<div class="slideCtrl down">next</div>
+
+
+ <!--キューブ型ホバーボタン-->   
+<div class="slideCtrl down" ><span>Up!</span><span>Move</span></div>    
+    
+
 </div>
 <div class="slideFrame" id="slider-2">
 <ul class="slideGuide up">
-<li class="slideCell"><img src="photo/60/1.jpg" alt="" width="60" height="60"></li>
-<li class="slideCell"><img src="photo/60/2.jpg" alt="" width="60" height="60"></li>
-<li class="slideCell"><img src="photo/60/3.jpg" alt="" width="60" height="60"></li>
-<li class="slideCell"><img src="photo/60/4.jpg" alt="" width="60" height="60"></li>
-<li class="slideCell"><img src="photo/60/5.jpg" alt="" width="60" height="60"></li>
-<li class="slideCell"><img src="photo/60/6.jpg" alt="" width="60" height="60"></li>
-<li class="slideCell"><img src="photo/60/7.jpg" alt="" width="60" height="60"></li>
-<li class="slideCell"><img src="photo/60/8.jpg" alt="" width="60" height="60"></li>
-<li class="slideCell"><img src="photo/60/9.jpg" alt="" width="60" height="60"></li>
-<li class="slideCell"><img src="photo/60/10.jpg" alt="" width="60" height="60"></li>
+<li class="slideCell"><img src="photo/60/s_1.jpg" alt="" width="60" height="60"></li>
+<li class="slideCell"><img src="photo/60/s_2.jpg" alt="" width="60" height="60"></li>
+<li class="slideCell"><img src="photo/60/s_3.jpg" alt="" width="60" height="60"></li>
+<li class="slideCell"><img src="photo/60/s_4.jpg" alt="" width="60" height="60"></li>
+<li class="slideCell"><img src="photo/60/s_5.jpg" alt="" width="60" height="60"></li>
+<li class="slideCell"><img src="photo/60/s_6.jpg" alt="" width="60" height="60"></li>
+<li class="slideCell"><img src="photo/60/s_7.jpg" alt="" width="60" height="60"></li>
+<li class="slideCell"><img src="photo/60/s_8.jpg" alt="" width="60" height="60"></li>
+<li class="slideCell"><img src="photo/60/s_9.jpg" alt="" width="60" height="60"></li>
+<li class="slideCell"><img src="photo/60/s_10.jpg" alt="" width="60" height="60"></li>
 </ul>
-<!--<div class="slideCtrl up">prev</div>-->
-<div class="slideCtrl down">next</div>
+    
+    
+ <!--キューブ型ホバーボタン-->   
+<div class="slideCtrl down"><span>Up!</span><span>Speed</span></div>    
+    
+
 </div>
+    
+    
+    
+    
 <div class="slideFrame" id="slider-3">
 <ul class="guide-other down">
-<li class="cell-other"><img src="photo/263/1.jpg" alt="" width="263" height="263"></li>
-<li class="cell-other"><img src="photo/263/2.jpg" alt="" width="263" height="263"></li>
-<li class="cell-other"><img src="photo/263/3.jpg" alt="" width="263" height="263"></li>
-<li class="cell-other"><img src="photo/263/4.jpg" alt="" width="263" height="263"></li>
+<li class="cell-other"><img src="photo/263/s_1.jpg" alt="" width="263" height="263"></li>
+<li class="cell-other"><img src="photo/263/s_2.jpg" alt="" width="263" height="263"></li>
+<li class="cell-other"><img src="photo/263/s_3.jpg" alt="" width="263" height="263"></li>
+<li class="cell-other"><img src="photo/263/s_4.jpg" alt="" width="263" height="263"></li>
 </ul>
 </div>
 </section>
