@@ -10,36 +10,40 @@
 <link rel="stylesheet" type="text/css" href="../reset/style.css">
     
     
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/slider.js"></script>
 <script>
 $(function(){
 
-	// 自動実行
+	// 自動
 	$("#slider-0").slider({
 		direction: "up",
 		time: 32
 	});
+    
 	// 手動で動かす
 	$("#slider-1").slider({
-		direction: "up",
-		auto: false,
-		pause: false
+		direction: "down",
+        time: 24,
+		speed: 7
+        
+//		auto: false,
+//		pause: false
 	});
-	// 早送り・巻き戻し
+	// スピードアップ
 	$("#slider-2").slider({
 		direction: "up",
 		time: 24,
-		speed: 3
+		speed: 7
 	});
-	// クラス名のカスタマイズ
+	// 逆回転
 	$("#slider-3").slider({
 		direction: "down",
 	    guideSelector: ".guide-other",   // ガイド用クラス名の変更
-	    cellSelector: ".cell-other" // セル用クラス名の変更
-	});
+	    cellSelector: ".cell-other", // セル用クラス名の変更
+　　　　　speed: 5
+    });
 	
-	// サンプル用の追加設定 ====================================
 	$(window).resize(function() {
 		// フレームの高さをウィンドウサイズに合わせる。
 		$(".slideFrame").height($(window).height() - $("footer").height());
@@ -107,8 +111,13 @@ $(function(){
 <li class="slideCell"> <img src="photo/300/s_blog-305.jpg" alt="" width="300" height="300">
 <p>Talking much about oneself can also be a means to conceal oneself.</p>
 </li>
-</ul>
-</div>
+</ul>   
+
+    
+  <!--キューブ型ホバーボタン-->   
+<!--<div class="slideCtrl down" id="stop"><span>Auto</span><span>Hover</span></div>      -->
+ </div> 
+    
     
 <!--ここでSpeed Up!のbackground-colorとか指定してる。-->
 <div class="slideFrame" id="slider-1">
@@ -122,10 +131,11 @@ $(function(){
 
 
  <!--キューブ型ホバーボタン-->   
-<div class="slideCtrl down" ><span>Up!</span><span>Move</span></div>    
+<div class="slideCtrl down" ><span>Back!</span><span>Move</span></div>    
     
 
 </div>
+    
 <div class="slideFrame" id="slider-2">
 <ul class="slideGuide up">
 <li class="slideCell"><img src="photo/60/s_1.jpg" alt="" width="60" height="60"></li>
@@ -150,13 +160,17 @@ $(function(){
     
     
     
-<div class="slideFrame" id="slider-3">
+<div class="slideFrame" id="slider-3" >
 <ul class="guide-other down">
 <li class="cell-other"><img src="photo/263/s_1.jpg" alt="" width="263" height="263"></li>
 <li class="cell-other"><img src="photo/263/s_2.jpg" alt="" width="263" height="263"></li>
 <li class="cell-other"><img src="photo/263/s_3.jpg" alt="" width="263" height="263"></li>
 <li class="cell-other"><img src="photo/263/s_4.jpg" alt="" width="263" height="263"></li>
 </ul>
+    
+  <!--キューブ型ホバーボタン-->   
+<!--<div class="slideCtrl down" id="back"><span>Back!</span><span>Hover</span></div>     -->
+    
 </div>
 </section>
 </div>

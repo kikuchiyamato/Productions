@@ -1,4 +1,4 @@
-# チーム制作　team Earth
+# ECsite チーム制作team Earth スイーツ屋さん
 
 OS Mac
 制作期間：３週間

@@ -120,8 +120,16 @@
 						}
 						// slideGuideのサイズを合計幅＋最大幅にする。
 						def.guide.width(size + max);
+                        
+                        
 				}
 			}
+            
+            
+            
+            
+            
+            
 			var initTimerId = 0;
 
 			// slider 定義 ==========================
@@ -241,6 +249,8 @@
 								duration: par.time * par.guide.height() / par.sp,
 								easing: par.easing
 							});
+                            
+                            
 							// 停止設定
 							var gl = par.guide.offset().top;
 							var fl = par.guide.parent().offset().top;
@@ -287,6 +297,10 @@
 					}
 				}
 			}
+            
+            
+            
+            
 
 			// 実行設定 ------------------------------- //
 
@@ -305,14 +319,17 @@
 
 			// オプション設定 ------------------------- //
 
-			// マウスオーバーで一時停止する
+			// マウスオーバーで一時停止
 			if (def.pause) {
 				def.guide.hover(
 					function() { $(this).find(def.cell).stop(true); },
 					function() { slider(def); }
 				);
 			}
-			
+        	
+            
+            
+            
 			// コントローラ設定 ------------------------- //
 
 			// ホバーイベント
@@ -353,16 +370,20 @@
 							def.sp = def.speed;
 							def.direction = $(this).hasClass("right") ? def.reverse ? "left" : "right" : def.reverse ? "right" : "left";
 							switch (true) {
-								case $(this).hasClass("right"):
+								
+                                case $(this).hasClass("right"):
 									def.direction = def.reverse ? "left" : "right";
 									break;
-								case $(this).hasClass("up"):
+								
+                                case $(this).hasClass("up"):
 									def.direction = def.reverse ? "down" : "up";
 									break;
-								case $(this).hasClass("down"):
+								
+                                case $(this).hasClass("down"):
 									def.direction = def.reverse ? "up" : "down";
 									break;
-								case $(this).hasClass("left"):
+								
+                                case $(this).hasClass("left"):
 								default:
 									def.direction = def.reverse ? "right" : "left";
 							}
@@ -377,6 +398,13 @@
 					);
 				}
 			}
+            
+            
+            
+            
+            
+            
+            
 			
 			// クリックイベント
 			if (def.ctrlClick) {
